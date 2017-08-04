@@ -83,9 +83,9 @@ class Content extends React.Component {
                 Enter text : <input type="text" ref="simpletext"/>
                 <Button handleClick={this.handleClick} text="SUBMIT" />
                 <br />
-                <List articles={AppReduxStore.getState()._articles} listHeader="Submitted Articles" handleRemoveClick={this.handleRemoveClick} />
+                <List articles={AppReduxStore.getState().articles} listHeader="Submitted Articles" handleRemoveClick={this.handleRemoveClick} />
                 {this.state.message}
-                <List articles={AppReduxStore.getState()._articlesApproved} listHeader="Approval Status" handleRemoveClick={this.handleRemoveClick} />
+                <List articles={AppReduxStore.getState().articlesApproved} listHeader="Approval Status" handleRemoveClick={this.handleRemoveClick} />
             </div>;
 
         return simpleContent;
